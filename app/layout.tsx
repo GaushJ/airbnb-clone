@@ -2,6 +2,7 @@ import './globals.css'
 import { Nunito } from 'next/font/google'
 import type { Metadata } from 'next'
 import Navbar from './components/Navbar/Navbar'
+import RegisterModal from './components/modals/RegisterModal'
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={font.className}>
+        <RegisterModal />
         <Navbar />
         {children}
       </body>
